@@ -40,4 +40,4 @@ node index.js
 Your project will be runnning on http://localhost:3000/
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/Techistan/kodeclass/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Techistan/kodeclass/blob/development/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>kodeClass</title>
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="codemirror/theme/ambiance.css">
+    <link rel="stylesheet" href="codemirror/theme/blackboard.css">
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/addon/mode/overlay.js"></script>
+    <script src="codemirror/mode/xml/xml.js"></script>
+    <script src="codemirror/mode/markdown/markdown.js"></script>
+    <script src="codemirror/mode/gfm/gfm.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script>
+    <!-- Code block highlighting modes -->
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <script src="codemirror/mode/css/css.js"></script>
+    <script src="codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="codemirror/mode/clike/clike.js"></script>
+    <script src="codemirror/mode/clojure/clojure.js"></script>
+    <script src="codemirror/mode/ruby/ruby.js"></script>
+    
+    <!-- socket io implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <!-- styling aplied here-->
+    
+    <!-- Modal links and script-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+
+    <button class='btn btn-lg' id='run' action='test' data-toggle="modal" data-target="" clickable='false'> <span class="glyphicon glyphicon-console" aria-hidden="true"></span></button>
+    <button class='btn btn-lg' id='download' ><span class='glyphicon glyphicon-save-file'></span></button>
+    <button type="button" class="btn btn-lg">
+      <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
+    </button>
+    <button type="button" class="btn btn-lg">
+      <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+    </button>
+    <br>
+    <br>
+    <input type="text" id='link' placeholder="Put youtube url here">
+    <button id='play'><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+    <h1 class="video"  data-toggle="modal" data-target="#videoModal"></h1>
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <iframe width="100%" height="350" src="" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+<textarea id="editor" >'sup</textarea>
+<script src='main.js'></script>
+  </body>
+</html>

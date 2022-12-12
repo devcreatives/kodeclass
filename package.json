@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.18.2",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "socket.io": "^2.4.0"
   },
   "devDependencies": {},
